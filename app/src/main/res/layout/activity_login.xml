@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/TXT_LOGIN_TITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/bazaristic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TXT_LOGIN_SUBTITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="140dp"
+        android:text="@string/inicio_de_sesi_n"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_LOGIN_TITULO" />
+
+    <EditText
+        android:id="@+id/TXT_LOGIN_EMAIL"
+        android:layout_width="294dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="56dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ingrese_su_correo"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_LOGIN_SUBTITULO" />
+
+    <EditText
+        android:id="@+id/TXT_LOGIN_PASSWORD"
+        android:layout_width="291dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ingrese_su_contrase_a"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_LOGIN_EMAIL" />
+
+    <Button
+        android:id="@+id/BTN_LOGIN_ACCEDER"
+        android:layout_width="258dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/ingresar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_LOGIN_PASSWORD" />
+</androidx.constraintlayout.widget.ConstraintLayout>

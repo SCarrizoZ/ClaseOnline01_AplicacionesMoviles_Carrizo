@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/IMG_DIALOG_LOGO"
+        android:layout_width="152dp"
+        android:layout_height="89dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/logo_bazar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bazar_logo_sin_fondo" />
+
+    <TextView
+        android:id="@+id/TXT_DIALOG_TITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/bazaristic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/TXT_DIALOG_ERROR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/error_de_ingreso"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E80A0A" />
+
+    <Button
+        android:id="@+id/BTN_DIALOG_ACEPTAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/aceptar" />
+</LinearLayout>
