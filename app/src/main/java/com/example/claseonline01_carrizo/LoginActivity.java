@@ -1,5 +1,6 @@
 package com.example.claseonline01_carrizo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +34,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(emailText.equals(adminEmail) && passwordText.equals(adminPassword)){
                     Log.v("Inicio de sesión", "correcto");
+                    Intent intent = new Intent(LoginActivity.this, ListActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Log.v("Inicio de sesión", "fallido");
